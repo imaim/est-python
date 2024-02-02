@@ -1,9 +1,9 @@
 repos:
-  - repo: git@github.com:imaim/est-python.git
+  - repo: local
     hooks:
       - id: pylint
         name: pylint
-        entry: pylint
+        entry: venv/bin/pylint
         language: system
         types: [python]
         args:
@@ -13,7 +13,7 @@ repos:
             "--rcfile=.pylintrc", # Link to your config file
             "--load-plugins=pylint.extensions.docparams", # Load an extension
           ]
-  - repo: git@github.com:imaim/est-python.git
+  - repo: local
     hooks:
       - id: requirements
         name: requirements
