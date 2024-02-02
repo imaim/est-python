@@ -1,6 +1,6 @@
 
 
-def minha_funcao(teste) -> None:
+def minha_Funcao(teste) -> None:
     #"""Descrição da minha função"""
     az = "erro"
     print(teste)
