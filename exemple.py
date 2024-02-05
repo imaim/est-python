@@ -1,3 +1,3 @@
-def Teste_1():
-    pass
-    
+def teste():
+    ver = "teste"
+    return ver
