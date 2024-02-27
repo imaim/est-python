@@ -2,14 +2,17 @@
 
 disable= 
       C0116, #missing function docstring
+      C0115, #missing class docstring
       C0114, #missing module docstring
       E0015, #unreconizted option
       W0703, #Catching too general exception Exception
       C0209, #Consider-using-f-string
       C0321, # Multiple-statments
+      C0303, # trailing-whitespace
       W0221, # Arguments-differ
       R0801, #Duplicate-code
       W0012, #unknown-option-value
+      R0903, #too-few-public-methods
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
 # only in one or another interpreter, leading to false positives when analysed.
