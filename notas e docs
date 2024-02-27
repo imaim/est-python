@@ -1,0 +1,7 @@
+# requiriments
+    pip install -r requirements.txt
+# pre commit
+    rodar apos clonar , pre-commit install
+
+#mysql conf e senha:
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Summer01';
