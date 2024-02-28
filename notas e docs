@@ -5,3 +5,13 @@
 
 ##mysql conf e senha:
     ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Summer01';
+
+
+Dados de acesso atual
+
+            'mysql+pymysql',
+            'prod',
+            'Psytrixx2121#',
+            'localhost',
+            '3306',
+            'clean_database'
