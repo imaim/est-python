@@ -1,3 +1,4 @@
+#pylint: disable=no-name-in-module
 from typing import List
 from src.data.interfaces.users_repository import UsersRepositoryInterface
 from src.domain.models.users import Users

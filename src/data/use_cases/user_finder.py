@@ -1,3 +1,4 @@
+#pylint: disable=no-name-in-module
 from typing import Dict
 from src.data.interfaces.users_repository import UsersRepositoryInterface
 from src.domain.use_cases.user_finder import UserFinder as UserFinderInterface
@@ -9,4 +10,4 @@ class UserFinder(UserFinderInterface):
 
     def find(self, first_name: str) -> Dict:
         pass
-    
+        
