@@ -1,4 +1,4 @@
-from src.infra.db.repository.users_repositoy import UsersRepository
+from src.infra.db.repository.users_repository import UsersRepository
 from .user_finder import UserFinder
 
 
