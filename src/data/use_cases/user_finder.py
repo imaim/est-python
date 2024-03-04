@@ -1,6 +1,6 @@
 from typing import Dict
-from src.domain.use_cases.user_finder import UserFinder as UserFinderInterface
 from src.data.interfaces.users_repository import UsersRepositoryInterface
+from src.domain.use_cases.user_finder import UserFinder as UserFinderInterface
 
 class UserFinder(UserFinderInterface):
 
@@ -9,3 +9,4 @@ class UserFinder(UserFinderInterface):
 
     def find(self, first_name: str) -> Dict:
         pass
+    
