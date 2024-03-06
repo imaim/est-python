@@ -1,7 +1,14 @@
-from src.infra.db.repository.users_repository import UsersRepository
+from src.infra.db.tests.users_repository import UsersRepositorySpy
 from .user_finder import UserFinder
 
 
 def test_find():
-    user_finder = UserFinder()
+    first_name = 'jo4o'
+    
+    repo = UsersRepositorySpy()
+    user_finder = UserFinder(repo)
+    
+    response = user_finder.find(first_name)
+    
+    print(response)
     
