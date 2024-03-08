@@ -12,7 +12,6 @@ class UsersRepositorySpy():
         self.inser_user_attributes["first_name"] = first_name
         self.inser_user_attributes["last_name"] = last_name
         self.inser_user_attributes["age"] = age
-        return
         
 
     def select_user(self, first_name: str) -> List[Users]:
