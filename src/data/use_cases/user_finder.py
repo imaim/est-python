@@ -33,12 +33,14 @@ class UserFinder(UserFinderInterface):
     def __format_response(cls, users: List[Users]) -> Dict:
         attributes = []
         for user in users:
-            attributes.append({"fisrt_name": user.first_name, "age": user.age})
+            attributes.append(
+                {"fisrt_name": user.first_name, "age": user.age}
+            )
             
         response = {
             "type": "Users",
             "count": len(users),
-            "attributes": users
+            "attributes": attributes
         }
         
         return response
