@@ -4,7 +4,7 @@ from typing import Dict, List
 from src.data.interfaces.users_repository import UsersRepositoryInterface
 from src.domain.use_cases.user_finder import UserFinder as UserFinderInterface
 from src.domain.models.users import Users
-from src.erros.types import HttpNotFoundError, HttpBadRequestError
+from src.erros.types import HttpBadRequestError
 
 class UserFinder(UserFinderInterface):
 
@@ -28,7 +28,7 @@ class UserFinder(UserFinderInterface):
     def __search_firt_name(self, first_name: str) -> List[Users]:
         users = self.__users_repository.select_user(first_name)
         if users == []:
-            raise HttpNotFoundError('Usuario nao encontrado')
+            raise HttpBadRequestError('Usuario nao encontrado')
         return users
     
     @classmethod
