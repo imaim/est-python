@@ -8,7 +8,7 @@ def test_user_register_validator():
     request = MockRequest()
     print()
     request.json = {
-        "first_name": 123,
+        "first_name": "meunome",
         "last_name": "algumacoisa",
         "age": 23
     }
